@@ -24,11 +24,11 @@ def get_flash_cards(filename):
         # Replace the following line with lines that split the line and add it to a dictionary
         # Use the `strip` function to ensure that the answer doesn't include a
         # newline character (i.e. '\n')
-        fields = line.string().split("|")
+        fields = line.strip().split("|")
         eng = fields[0]
         esp = fields[1]
         d[eng] = esp
-        return d
+    return d
 
 
 def quiz(cards, target_score):
