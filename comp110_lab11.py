@@ -20,6 +20,8 @@ def get_flash_cards(filename):
     card_file = open(filename, 'r')
     d = {}
 
+    my_dict = {}
+
     for line in card_file:
         new_line = line.strip
 
@@ -28,13 +30,28 @@ def get_flash_cards(filename):
         # newline character (i.e. '\n')
         pass
 
+
+def quiz(cards, target_score):
+    """
+    Creates the quiz for the user with the desired flashcards 
+
+    Parameters: cards and target score
+
+    Returns: Total number of questions it tok for the user to reach their target score
+    """
+
     return None  # modify this line to return your dictionary
 
 
 # To Do: Define your quiz function immediately AFTER this line.
 
-
 def main():
+    """Prints out the input for the user, and ask the user a series of questions
+
+    Parameters: none
+
+    Returns : what percentage they got on the quiz
+    """
 
     print("Welcome to Flash in the pan, a Flash Card Program")
 
@@ -42,7 +59,7 @@ def main():
 
     input("Enter the score you would like to target on this quiz")
 
-    print(percentage_score)
+    print()
 
 
 """ DO NOT MODIFY ANYTHING BELOW THIS LINE! """
